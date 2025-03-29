@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background: #ffffff;
+    --text-color: #333333;
+    --accent-color: #16a085;
+    --highlight-color: #f1f1f1;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--accent-color);
+  }
+  
+  section {
+    padding: 50px 20px;
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    background: var(--highlight-color);
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid var(--accent-color);
+    font-size: 1.05rem;
+  }
+  
+  form {
+    margin-top: 30px;
+  }
+  
+  form input[type="email"],
+  form textarea,
+  form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  footer {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+  
+    section {
+      padding: 30px 15px;
+    }
+  
+    header h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Custom Button Style */
+  .button {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 12px 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background: var(--secondary-color);
+  }
+  
